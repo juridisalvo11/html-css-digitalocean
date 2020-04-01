@@ -46,7 +46,6 @@ header, .navbar-default {
     border: 1px solid #0069ff;
     border-radius: 5px;
     font-size: 14px;
-    padding: 0px 16px;
     text-decoration: none;
     color: #0069ff;
     font-weight: 600;
@@ -284,9 +283,68 @@ header, .navbar-default {
     color: rgba(3, 27, 78, 0.7);
 }
 
+.container-small {
+    max-width: 990px;
+    margin-top: 100px;
+}
+
+.list-deploy ul {
+    list-style-type: none;
+
+}
+
+.list-deploy li {
+    border-left: 2px solid rgb(229, 232, 237);
+    font-weight: 600;
+}
+
+.list-deploy ul li:first-child {
+    border-color: black;
+}
+
+#color-black {
+    color: rgb(3, 27, 78);
+}
+
+.list-deploy a {
+    padding-left: 10px;
+    line-height: 45px;
+    text-decoration: none;
+    color: rgba(3,27,78,0.5);
+}
+
+.list-deploy a:hover {
+    color: rgba(3,27,78,.7);
+}
+
+.deploy-right {
+    padding-bottom: 100px;
+
+}
+
+.deploy-right h3 {
+    font-size: 18px;
+    color: rgb(3, 27, 78);
+    font-weight: 400;
+}
+
+.deploy-right p {
+    font-size: 16px;
+    color: rgba(3, 27, 78, 0.7);
+}
+
+.icon-deploy {
+    font-size: 30px;
+    color: rgb(0, 105, 255);
+}
+
+.icon-bottom {
+    padding-top: 50px;
+}
+
 @media all and (min-width: 768px) and (max-width: 991px) {
     .logo-header {
-        width: 100%;
+        width: 50%;
     }
 
     .navbar-list {
@@ -309,5 +367,24 @@ header, .navbar-default {
     .logo-header {
         width: 100%;
         padding-left: 15px;
+    }
+
+    .navbar-right {
+        margin-right: 15px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .navbar-list, .btn-signup {
+        display: block;
+    }
+
+    .logo-header {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .navbar-right {
+        margin-right: 30px;
     }
 }
