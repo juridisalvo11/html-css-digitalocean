@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 100%;
-}
 
 .container::after {
     clear: both;
