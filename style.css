@@ -3,6 +3,21 @@ header, .navbar-default {
 
     background-color: white;
 }
+.container {
+    text-align: center;
+}
+
+h2 {
+    padding-top: 100px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #031b4e;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
 .header-top {
     height: 40px;
     border-bottom: 1px solid #e5e8ed;
@@ -66,6 +81,7 @@ header, .navbar-default {
 
 .navbar-list li {
     display: inline-block;
+    color: #031b4e;
 }
 
 .navbar-list a {
@@ -272,20 +288,39 @@ header, .navbar-default {
 
 /* sezione deploy */
 
-.scale h2 {
-    padding-top: 50px;
+.section-title {
     font-weight: 600;
     color: #031b4e;
+    margin-bottom: 50px;
 }
 
-.scale p {
+.section-paragraph {
     font-size: 20px;
     color: rgba(3, 27, 78, 0.7);
 }
 
-.container-small {
-    max-width: 990px;
-    margin-top: 100px;
+.section-paragraph p {
+    font-size: 16px;
+}
+
+.build {
+    text-align: center;
+}
+
+.section-paragraph a {
+    text-decoration: none;
+    color: #0069ff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.security, .pricing {
+    padding-top: 40px;
+}
+
+.support, .compliance {
+    padding-top: 20px;
+    padding-bottom: 100px;
 }
 
 .list-deploy ul {
@@ -342,6 +377,59 @@ header, .navbar-default {
     padding-top: 50px;
 }
 
+.immagine-sfondo {
+    max-width: 90%;
+    margin-bottom: 50px;
+}
+
+.cont-immagine {
+    position: relative;
+    padding-top: 50px;
+}
+
+.cont-immagine::before,
+.cont-immagine::after {
+    position: absolute;
+    font-size: 50px;
+    width: 30px;
+    height: 30px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.cont-immagine::after {
+    content: '>';
+    right: 0;
+    color: #031b4e;
+}
+.cont-immagine::before {
+    content: '<';
+    left: 0;
+    color: rgba(3, 27, 78, 0.5);
+}
+
+.img-p {
+    font-size: 18px;
+}
+
+.circle-list ul {
+    list-style-type: none;
+    color: #0069ff;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.circle-list li {
+    display: inline-block;
+    font-size: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.full-circle {
+    font-weight: 600;
+}
+
 @media all and (min-width: 768px) and (max-width: 991px) {
     .logo-header {
         width: 50%;
@@ -356,6 +444,9 @@ header, .navbar-default {
         margin-left: 90px;
     }
 
+    .pricing {
+        padding-top: 62px;
+    }
 
 }
 
