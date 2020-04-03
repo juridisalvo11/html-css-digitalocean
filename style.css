@@ -2,6 +2,10 @@
 header, .navbar-default {
     background-color: white;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .container {
     text-align: center;
 }
@@ -38,7 +42,7 @@ h3 {
     line-height: 35px;
     padding-left: 20px;
     color: #5b6987;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 #advice {
@@ -76,7 +80,7 @@ h3 {
     font-size: 14px;
     text-decoration: none;
     color: #0069ff;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .navbar-nav {
@@ -140,7 +144,7 @@ h3 {
 
 /* sezione jumbotron */
 
-.jumbotron {
+.jumbotron, .get-started {
     background-image: url(img/bgjumbotron.jpg);
     margin-bottom: 0;
 }
@@ -192,7 +196,7 @@ h3 {
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-weight: 600;
+    font-weight: 700;
     width: 100%;
 }
 
@@ -256,7 +260,7 @@ h3 {
 .innovative {
     font-size: 15px;
     color: rgb(3, 27, 78, 0.4);
-    font-weight: 600;
+    font-weight: 700;
     padding-top: 50px;
 }
 
@@ -291,7 +295,7 @@ h3 {
 #bsn-solutions {
     color: #0069ff;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     padding-bottom: 50px;
     padding-top: 50px;
@@ -304,7 +308,7 @@ h3 {
 /* sezione deploy */
 
 .section-title {
-    font-weight: 600;
+    font-weight: 700;
     color: #031b4e;
 }
 
@@ -338,7 +342,7 @@ h3 {
 
 .list-deploy li {
     border-left: 2px solid rgb(229, 232, 237);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .list-deploy ul li:first-child {
@@ -452,7 +456,7 @@ h3 {
 .table-right, .table-left {
     border-bottom: 1px solid white;
     text-align: left;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .table-right div, .table-left div {
@@ -481,6 +485,52 @@ h3 {
 
 }
 
+.get-started h2 {
+    color: white;
+}
+
+.get-started button{
+    width: 180px;
+    background-color: white;
+    color: #0069ff;
+    margin-bottom: 50px;
+}
+
+.get-started button:hover {
+    background-color:hsla(0,0%,100%,.8);
+    color: #0069ff;
+}
+
+footer {
+    background-color: #010e28;
+    padding-top: 100px;
+}
+
+footer li {
+    list-style-type: none;
+    text-align: left;
+    line-height: 30px;
+}
+
+.list-footer {
+    text-transform: capitalize;
+    padding-bottom: 50px;
+}
+
+.list-footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.list-footer a:hover {
+    color: #fff;
+}
+
+.title {
+    line-height: 40px;
+    color: white;
+}
+
 @media all and (min-width: 768px) and (max-width: 991px) {
     .logo-header {
         width: 50%;
@@ -502,6 +552,10 @@ h3 {
 }
 
 @media all and (min-width: 992px) and (max-width: 1199px) {
+    .navbar-list {
+        font-weight: 400;
+    }
+
     .navbar-list, .btn-signup {
         display: block;
     }
@@ -517,8 +571,12 @@ h3 {
 }
 
 @media all and (min-width: 1200px) {
+    .navbar-list {
+        font-weight: 400;
+    }
+
     .navbar-list, .btn-signup {
-        display: block;
+        display: block
     }
 
     .logo-header {
